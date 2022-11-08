@@ -7,20 +7,30 @@
             TravelMore.
         </title>
         <link rel="stylesheet" href="style.css"/>
+        
 
     </head>
+  <script src="https://kit.fontawesome.com/5118acac32.js" crossorigin="anonymous"></script>
     <body>
-      <section class="header" id="navbar">
-
+      <section  id="navbar">
+        <header class="header">
         <a href="home.html" class="logo">travel<span id="highlight">more.</span></a>
      
         <nav class="navbar">
-           <a href="#services">about</a>
-           <a href="#destination">discover</a>
-           <a href="book.html">plan your trip</a>
+           <a href="#about" class="tooltip">about <div class="tooltip-text"></div></a>
+           <a href="#services" class="tooltip">discover<div class="tooltip-text"></div></a>
+           <a href="#destination" class="tooltip">packages<div class="tooltip-text"></div></a>
+           <a href="#" class="tooltip">log in
+            <div class="tooltip-text">
+            <form action="authenticate.php" method="post" id="login-form">
+              <span class="form-text">Username</span><br>
+              <input type="text" id="username" placeholder="Your email"><br>
+              <span class="form-text">Password</span><br>
+              <input type="password" id="password" placeholder="Your password"><br>
+              <input type="submit" class="submit-btn" id="submit" value="Login">
+            </form>           </div></a>
         </nav>
-     
-     <hr>
+      </header>
      </section>
       <main class="intro-section">
         <div class="container">
@@ -149,23 +159,24 @@
           </div>
         </div>
       </main>
-      <hr>
-      <section class="home-about">
-
-        <div class="image">
-           <img src="https://source.unsplash.com/FBX_qonbn5M" alt="">
-        </div>
-     
+      <section id="about" class="home-about">
         <div class="content">
-           <h1 class="title">About us</h1>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita et, recusandae nobis fugit modi quibusdam ea assumenda, nulla quisquam repellat rem aliquid sequi maxime sapiente autem ipsum? Nobis, provident voluptate?</p>
-           <a href="about.php" class="btn">read more</a>
+           <h1 class="title">About Us</h1>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum 
+            interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">
+            erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, 
+            auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi,
+             sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. 
+             Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dap
+             ibus pulvinar nibh tempor porta.</span><p onclick="ReadMore()" id="MoreBtn" style="cursor:pointer;text-decoration:underline">Read more</p></p>
+             
+
         </div>
      
      </section>
       <section id="services" class="services">
 
-        <h1 class="title"> Our Services </h1>
+        <p class="section-subtitle"> Our Services </p>
         <hr>
         <div class="box-container">
      
@@ -196,15 +207,197 @@
      
            <div class="box">
               <img src="images/icon-6.png" alt="">
-              <h3>Camping</h3>
+              <h3>Lodging</h3>
            </div>
+           <div class="box">
+            <img src="images/icon-1.png" alt="">
+            <h3>FriendlyFood</h3>
+         </div>
      
         </div>
      
      </section>
-     <section class="destinations">
-     <div class="panels">
-      
-      </div>
+  <section id="destination" class="destination">
+    
+
+    <p class="section-subtitle">Destinations</p>
+
+    <h2 class="h2 section-title">Choose Your Place</h2>
+        <div class="container">
+              <div class="destination-card">
+                  <div class="card-image car-1">
+                  </div>
+                      <h3>Malé,Maldives</h3>
+                      <p ></p>
+                      <a href=""#>Book Now</a>
+                  </div>
+              <div class="destination-card">
+
+                <div class="card-image car-2">
+                  </div>
+                  <h3>Bangkok,Thailand</h3>
+                  <p ></p>
+                  
+                      <a href=""#>Book Now</a>
+                </div>
+              <div class="destination-card">
+
+                <div class="card-image car-3">
+                  </div>
+
+                  <h3>Kuala Lumpur,Malaysia</h3>
+                  <p></p>
+                  
+                      <a href=""#>Book Now</a>
+                </div>
+
+              <div class="destination-card">
+
+                <div class="card-image car-4">
+                  </div>
+
+                  <h3>Kathmandu,Nepal</h3>
+                  <p></p>
+                  
+                      <a href=""#>Book Now</a>
+                </div>
+              <div class="destination-card">
+
+                <div class="card-image car-5">
+                  </div>
+                  <h3>Jakarta,Indonesia</h3>
+                  
+                  <p></p>
+                  
+                      <a href=""#>Book Now</a>
+
+                </div>
+                
+              <div class="destination-card">
+
+                <div class="card-image car-6">
+                  </div>
+                  <h3>Rabbat, Morocco</h3>
+                  
+                  <p></p>
+                  
+                      <a href=""#>Book Now</a>
+
+                </div>
+
+                
+              <div class="destination-card">
+
+                <div class="card-image car-7">
+                  </div>
+                  <h3>Tokyo,Japan</h3>
+                  
+                  <p></p>
+                  
+                      <a href=""#>Book Now</a>
+
+                </div>
+
+
+        </div>
+      </section>
     </section>
+        <section>
+        <footer>
+          <div class="footer-top">
+          <div class="footer-left">
+          <h3>travelmore.</h3>
+          <p>tired of sitting at your desk the whole day?feel like you're stuck in a loop?</p>
+           <div class="socials">
+         <a href="#" id="facebook"><i class="fa fa-facebook"></i></a>
+         <a href="#" id="twitter"><i class="fa fa-twitter"></i></a>
+         <a href="#" id="google"><i class="fa fa-google-plus"></i></a>
+         <a href="#" id="youtube"><i class="fa fa-youtube"></i></a>
+         <a href="#" id="linkedin"><i class="fa fa-linkedin-square"></i></a>
+           </div>
+        </div>
+<ul class="footer-right">
+  <li>
+    <p class="footer-list-title">Top destination</p>
+    <ul class="box"><li>
+      <a href="#" class="footer-link">Indonesia, Jakarta</a>
+    </li>
+  
+    <li>
+      <a href="#" class="footer-link">Maldives, Malé</a>
+    </li> 
+  
+    <li>
+      <a href="#" class="footer-link">Australia, Canberra</a>
+    </li>
+  
+    <li>
+      <a href="#" class="footer-link">Thailand, Bangkok</a>
+    </li>
+  
+    <li>
+      <a href="#" class="footer-link">Morocco, Rabat</a>
+    </li>
+  </ul>
+  </li>
+  <li>
+    
+    <p class="footer-list-title">Categories</p>
+    <ul class="box">
+      <li>
+        <a href="#" class="footer-link">Travel</a>
+      </li>
+    
+      <li>
+        <a href="#" class="footer-link">Lifestyle</a>
+      </li>
+    
+      <li>
+        <a href="#" class="footer-link">Fashion</a>
+      </li>
+    
+      <li>
+        <a href="#" class="footer-link">Education</a>
+      </li>
+    
+      <li>
+        <a href="#" class="footer-link">Food & Drink</a>
+      </li>
+
+    </ul>
+  </li>
+  <li>
+    <div class="box">
+      <p class="footer-list-title">Get a newsletter</p>
+
+  <p class="newsletter-text">
+    For the latest deals and tips, travel no further than your inbox!
+  </p>
+
+  <form action="" class="newsletter-form">
+    <input type="email" name="email" required placeholder="Email address" class="newsletter-input">
+
+    <input type="submit" class="btn-primary" value="SUBSCRIBE"/>
+  </form>
+    </div>
+  </li>
+  </ul>
+  </div>
+
+          <div class="footer-bottom">
+            <div class="footer-menu">
+ <ul class="f-menu">
+    <li><a href="">Home</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Contact</a></li>
+    <li><a href="">Blog</a></li>
+ </ul>
+</div>
+          </div>
+        </footer>
+        </section>
+      
+      
+        <button onclick="topFunction()" id="TopBtn" title="Go to top">^</button>
+      
      <script src="script.js"></script>
