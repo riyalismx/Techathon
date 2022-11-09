@@ -10,6 +10,5 @@
 * Html
 * SCSS
 * JavaScript
-
-![Stills](https://user-images.githubusercontent.com/116115725/200852399-5e14da73-409e-4b6e-abaa-068d77d09de5.png)
 ![Stills](https://user-images.githubusercontent.com/116115725/200852302-b006747d-9b59-4c53-a5aa-494e4e7475dc.png)
+![Stills](https://user-images.githubusercontent.com/116115725/200853148-ea5167bc-cc02-4349-988a-64e3873bab9e.png)
