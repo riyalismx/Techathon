@@ -27,12 +27,7 @@ function showPreviousItem() {
   }
 
   items[count].classList.add('active');
-  // Check if working...
   console.log(count);
-}
-
-function toggleNavigation(){
-  this.nextElementSibling.classList.toggle('active');
 }
 
 function keyPress(e) {
