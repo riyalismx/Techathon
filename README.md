@@ -1,5 +1,5 @@
 # Submission for Techathon 2.0
-## Front-end design for a travel page. Back-end yet to be added.
+## Front-end design for a travel page. No back-end yet.
 ## Attributions:
 * Unsplash
 * GoogleFonts
